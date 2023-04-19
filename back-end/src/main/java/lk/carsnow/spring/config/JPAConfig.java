@@ -1,9 +1,7 @@
 /**
- * @author : Ishara Maduarnga
- * Project Name: Easy_Car_Rental
- * Date        : 2/9/2023
- * Time        : 12:18 PM
- * Year        : 2023
+ * author  Yasith C Bandara
+ * created 4/19/2023 - 3:13 PM
+ * project back-end
  */
 
 package lk.carsnow.spring.config;
@@ -28,7 +26,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 
 @Configuration
-@EnableJpaRepositories(basePackages = "lk.ijse.spring.repo")
+@EnableJpaRepositories(basePackages = "lk.carsnow.spring.repo")
 @EnableTransactionManagement
 @PropertySource("classpath:application.properties")
 public class JPAConfig {

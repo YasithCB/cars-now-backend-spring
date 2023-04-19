@@ -1,9 +1,7 @@
 /**
- * @author : Ishara Maduarnga
- * Project Name: Easy_Car_Rental
- * Date        : 2/9/2023
- * Time        : 12:18 PM
- * Year        : 2023
+ * author  Yasith C Bandara
+ * created 4/19/2023 - 3:13 PM
+ * project back-end
  */
 
 package lk.carsnow.spring.config;
@@ -20,7 +18,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = "lk.ijse.spring")
+@ComponentScan(basePackages = "lk.carsnow.spring")
 public class WebAppConfig implements WebMvcConfigurer {
 
     @Bean
