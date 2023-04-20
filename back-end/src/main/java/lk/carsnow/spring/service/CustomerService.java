@@ -1,0 +1,28 @@
+package lk.carsnow.spring.service;
+
+import lk.carsnow.spring.dto.CustomerDTO;
+
+import java.util.List;
+
+public interface CustomerService {
+
+    void saveCustomer(CustomerDTO customer);
+
+    void updateCustomer(CustomerDTO customer);
+
+    void deleteCustomer(String id);
+
+    CustomerDTO searchCustomer(String id);
+
+    List<CustomerDTO> getAllCustomers();
+
+    String generateCustomerIds();
+
+    int countRegisteredCustomers();
+
+    int countDailyRegisteredCustomers(String date);
+
+    CustomerDTO searchUserFromCustomer(String id);
+
+    CustomerDTO findCustomerToReserve(String nic);
+}
